@@ -124,6 +124,14 @@ class request:
         with open(os.path.join(history_path, self.name + '.pickle'), 'wb') as save_file:
             pickle.dump(self, save_file)
             print(f'Saved class: {self.name}.pickle to: {history_path}')
+        # Save Data frame as csv
+        with open(os.path.join(history_path, self.name + '.csv'), 'w') as save_file:
+            self.export_csv(os.path.join(history_path, self.name + '.csv'))
+            print(f'Saved class: {self.name}.csv to: {history_path}')
+
+    def export_csv(self, path):
+        if self.df is not None:
+            self.df.to_csv(path, index=False, header=True)
 
 
 # Example
@@ -131,6 +139,7 @@ class request:
 # x.create_historical_all_request(90)
 # x.send_request()
 # x.save_obj()
+# print(x)
 
-x = load_obj('04_13_20', 'Israel')
-print(x)
+# x = load_obj('04_13_20')
+# print(x)
