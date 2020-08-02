@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "a6e9ce04d58f4f76b9d095eb5635c5bd": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.6",
+      "state": {
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "name": "OpenStreetMap.Mapnik",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "5db6e6634f024fa1851ee3a1e60a300a": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.6",
+      "state": {}
+    },
+    "c2d19a27869e4550a3c8f6f01d49b8dd": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.6",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "950e0c042ea346b5bc4c145fed4d9d4a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "512cf973ebe841899e1b6ff84b1088bc": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.6",
+      "state": {}
+    },
+    "8f7ed58623dd4a14976e8f9e70d50950": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.6",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          43.77908,
+          11.299047
+        ],
+        "controls": [
+          "IPY_MODEL_91b1d44221784501b77cb2e783937313",
+          "IPY_MODEL_8a196b0e44fa4b458f60ca1c6ed10f6a"
+        ],
+        "default_style": "IPY_MODEL_5db6e6634f024fa1851ee3a1e60a300a",
+        "dragging_style": "IPY_MODEL_c2d19a27869e4550a3c8f6f01d49b8dd",
+        "layers": [
+          "IPY_MODEL_a6e9ce04d58f4f76b9d095eb5635c5bd",
+          "IPY_MODEL_96d45d4292f840beb082306dc52301cc",
+          "IPY_MODEL_41ce7417884b46dc887ede3ff7b17e17",
+          "IPY_MODEL_8be73a5b8a614ce9965f56b9d3b13a5b",
+          "IPY_MODEL_e3bcda41457e40769a7f753384d96953",
+          "IPY_MODEL_97b8d65a9cfd45c2b2cc3783f5e6c87b",
+          "IPY_MODEL_432431cace524d91801b9f0ff79948c9",
+          "IPY_MODEL_6f9bff52b6e64e758edb6f43e4b9a81e",
+          "IPY_MODEL_1e8b08f1b7284a9d88a0993193b85c5f",
+          "IPY_MODEL_1ddff689d8f34c97b3248d7ff8f35835",
+          "IPY_MODEL_3a328d5a9a2a4efd90522418783ac19a",
+          "IPY_MODEL_0a8de8fe21674ffc98334774de7ff739",
+          "IPY_MODEL_e04f8fdb716947afb885dea4914ea624",
+          "IPY_MODEL_31272255d7374167aae140b5c4752c35"
+        ],
+        "layout": "IPY_MODEL_950e0c042ea346b5bc4c145fed4d9d4a",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_start"
+        ],
+        "style": "IPY_MODEL_512cf973ebe841899e1b6ff84b1088bc",
+        "zoom": 6.0
+      }
+    },
+    "91b1d44221784501b77cb2e783937313": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.6",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "8a196b0e44fa4b458f60ca1c6ed10f6a": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.6",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "96d45d4292f840beb082306dc52301cc": {
+      "model_name": "LeafletCircleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.6",
+      "state": {
+        "color": "green",
+        "fill_color": "green",
+        "location": [
+          41.902782,
+          12.496365
+        ],
+        "options": [
+          "class_name",
+          "color",
+          "dash_array",
+          "fill",
+          "fill_color",
+          "fill_opacity",
+          "line_cap",
+          "line_join",
+          "opacity",
+          "pointer_events",
+          "radius",
+          "stroke",
+          "weight"
+        ],
+        "radius": 500000
+      }
+    },
+    "41ce7417884b46dc887ede3ff7b17e17": {
+      "model_name": "LeafletCircleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.6",
+      "state": {
+        "color": "blue",
+        "fill_color": "blue",
+        "location": [
+          45.692919,
+          9.685191
+        ],
+        "options": [
+          "class_name",
+          "color",
+          "dash_array",
+          "fill",
+          "fill_color",
+          "fill_opacity",
+          "line_cap",
+          "line_join",
+          "opacity",
+          "pointer_events",
+          "radius",
+          "stroke",
+          "weight"
+        ],
+        "radius": 15000
+      }
+    },
+    "8be73a5b8a614ce9965f56b9d3b13a5b": {
+      "model_name": "LeafletCircleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.6",
+      "state": {
+        "color": "blue",
+        "fill_color": "blue",
+        "location": [
+          45.177811,
+          9.65017
+        ],
+        "options": [
+          "class_name",
+          "color",
+          "dash_array",
+          "fill",
+          "fill_color",
+          "fill_opacity",
+          "line_cap",
+          "line_join",
+          "opacity",
+          "pointer_events",
+          "radius",
+          "stroke",
+          "weight"
+        ],
+        "radius": 15000
+      }
+    },
+    "e3bcda41457e40769a7f753384d96953": {
+      "model_name": "LeafletCircleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.6",
+      "state": {
+        "color": "blue",
+        "fill_color": "blue",
+        "location": [
+          45.163569,
+          9.704778
+        ],
+        "options": [
+          "class_name",
+          "color",
+          "dash_array",
+          "fill",
+          "fill_color",
+          "fill_opacity",
+          "line_cap",
+          "line_join",
+          "opacity",
+          "pointer_events",
+          "radius",
+          "stroke",
+          "weight"
+        ],
+        "radius": 15000
+      }
+    },
+    "97b8d65a9cfd45c2b2cc3783f5e6c87b": {
+      "model_name": "LeafletCircleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.6",
+      "state": {
+        "color": "blue",
+        "fill_color": "blue",
+        "location": [
+          45.808555,
+          9.095428
+        ],
+        "options": [
+          "class_name",
+          "color",
+          "dash_array",
+          "fill",
+          "fill_color",
+          "fill_opacity",
+          "line_cap",
+          "line_join",
+          "opacity",
+          "pointer_events",
+          "radius",
+          "stroke",
+          "weight"
+        ],
+        "radius": 15000
+      }
+    },
+    "432431cace524d91801b9f0ff79948c9": {
+      "model_name": "LeafletCircleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.6",
+      "state": {
+        "color": "blue",
+        "fill_color": "blue",
+        "location": [
+          45.378779,
+          9.682331
+        ],
+        "options": [
+          "class_name",
+          "color",
+          "dash_array",
+          "fill",
+          "fill_color",
+          "fill_opacity",
+          "line_cap",
+          "line_join",
+          "opacity",
+          "pointer_events",
+          "radius",
+          "stroke",
+          "weight"
+        ],
+        "radius": 15000
+      }
+    },
+    "6f9bff52b6e64e758edb6f43e4b9a81e": {
+      "model_name": "LeafletCircleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.6",
+      "state": {
+        "color": "red",
+        "fill_color": "red",
+        "location": [
+          44.551499,
+          10.926799
+        ],
+        "options": [
+          "class_name",
+          "color",
+          "dash_array",
+          "fill",
+          "fill_color",
+          "fill_opacity",
+          "line_cap",
+          "line_join",
+          "opacity",
+          "pointer_events",
+          "radius",
+          "stroke",
+          "weight"
+        ],
+        "radius": 100000
+      }
+    },
+    "1e8b08f1b7284a9d88a0993193b85c5f": {
+      "model_name": "LeafletCircleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.6",
+      "state": {
+        "color": "red",
+        "fill_color": "red",
+        "location": [
+          45.657581,
+          9.9636
+        ],
+        "options": [
+          "class_name",
+          "color",
+          "dash_array",
+          "fill",
+          "fill_color",
+          "fill_opacity",
+          "line_cap",
+          "line_join",
+          "opacity",
+          "pointer_events",
+          "radius",
+          "stroke",
+          "weight"
+        ],
+        "radius": 100000
+      }
+    },
+    "1ddff689d8f34c97b3248d7ff8f35835": {
+      "model_name": "LeafletCircleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.6",
+      "state": {
+        "color": "blue",
+        "fill_color": "blue",
+        "location": [
+          45.464203,
+          9.189982
+        ],
+        "options": [
+          "class_name",
+          "color",
+          "dash_array",
+          "fill",
+          "fill_color",
+          "fill_opacity",
+          "line_cap",
+          "line_join",
+          "opacity",
+          "pointer_events",
+          "radius",
+          "stroke",
+          "weight"
+        ],
+        "radius": 15000
+      }
+    },
+    "3a328d5a9a2a4efd90522418783ac19a": {
+      "model_name": "LeafletCircleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.6",
+      "state": {
+        "color": "blue",
+        "fill_color": "blue",
+        "location": [
+          45.191652,
+          9.172623
+        ],
+        "options": [
+          "class_name",
+          "color",
+          "dash_array",
+          "fill",
+          "fill_color",
+          "fill_opacity",
+          "line_cap",
+          "line_join",
+          "opacity",
+          "pointer_events",
+          "radius",
+          "stroke",
+          "weight"
+        ],
+        "radius": 15000
+      }
+    },
+    "0a8de8fe21674ffc98334774de7ff739": {
+      "model_name": "LeafletCircleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.6",
+      "state": {
+        "color": "red",
+        "fill_color": "red",
+        "location": [
+          45.082506,
+          7.919908
+        ],
+        "options": [
+          "class_name",
+          "color",
+          "dash_array",
+          "fill",
+          "fill_color",
+          "fill_opacity",
+          "line_cap",
+          "line_join",
+          "opacity",
+          "pointer_events",
+          "radius",
+          "stroke",
+          "weight"
+        ],
+        "radius": 100000
+      }
+    },
+    "e04f8fdb716947afb885dea4914ea624": {
+      "model_name": "LeafletCircleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.6",
+      "state": {
+        "color": "blue",
+        "fill_color": "blue",
+        "location": [
+          41.902782,
+          12.496365
+        ],
+        "options": [
+          "class_name",
+          "color",
+          "dash_array",
+          "fill",
+          "fill_color",
+          "fill_opacity",
+          "line_cap",
+          "line_join",
+          "opacity",
+          "pointer_events",
+          "radius",
+          "stroke",
+          "weight"
+        ],
+        "radius": 15000
+      }
+    },
+    "31272255d7374167aae140b5c4752c35": {
+      "model_name": "LeafletCircleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.6",
+      "state": {
+        "color": "red",
+        "fill_color": "red",
+        "location": [
+          45.735802,
+          11.86179
+        ],
+        "options": [
+          "class_name",
+          "color",
+          "dash_array",
+          "fill",
+          "fill_color",
+          "fill_opacity",
+          "line_cap",
+          "line_join",
+          "opacity",
+          "pointer_events",
+          "radius",
+          "stroke",
+          "weight"
+        ],
+        "radius": 82000
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "8f7ed58623dd4a14976e8f9e70d50950"}
+</script>
+
+</body>
+</html>
